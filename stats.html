@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="shortcut icon" href="./assets/FaviconAmazingEvents.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="./styles/styles.css">
+    <title>Amazing Events</title>
+</head>
+<body>
+    <div id="background" class="bg">
+        <ul class="glass z-index-down">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
+    <header>  
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid d-flex">
+                <div class="navbar-brand text-light" href="#">
+                    <img id="magic" src="./assets/LogoAmazingEvents.png" alt="Amazing Events logo" height="30">
+                </div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end text-center" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li id="navbar" class="nav-item">
+                            <a class="nav-link text-dark" href="./index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" href="./upcoming.html">Upcoming Events</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" href="./past.html">Past Events</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" href="./contact.html">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark active" href="#">Stats</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main class="d-flex flex-column flex-grow-1 w-100">
+        <section class="table-container d-flex flex-column justify-content-center align-items-center w-100 bg-table-glass">
+            <table class="table mt-2">
+                <h2>EVENTS STATISTICS</h2>
+                <thead class="table-events d-block justify-content-center align-items-center">
+                    <tr class="d-flex justify-content-center">
+                        <th scope="col" class="col-3 d-flex justify-content-center text-center">MAX assistance</th>
+                        <th scope="col" class="col-3 d-flex justify-content-center text-center">MIN assistance</th>
+                        <th scope="col" class="col-3 d-flex justify-content-center text-center">MAX capacity</th>
+                    </tr>
+                </thead>
+                <tbody id="table1">
+                </tbody>
+            </table>
+            <table class="table mt-2">
+                <h2 class="text-center">UPCOMING EVENTS STATISTICS BY CATEGORY</h2>
+                <thead class="table-events d-block justify-content-center align-items-center">
+                    <tr class="d-flex justify-content-center">
+                        <th scope="col" class="col-3 d-flex justify-content-center">Categories</th>
+                        <th scope="col" class="col-3 d-flex justify-content-center">Estimate</th>
+                        <th scope="col" class="col-3 d-flex justify-content-center">Potential</th>
+                    </tr>
+                </thead>
+                <tbody id="table2">
+                </tbody>
+            </table>
+            <table class="table mt-2">
+                <h2 class="text-center">PAST EVENTS STATISTICS BY CATEGORY</h2>
+                <thead class="table-events d-block justify-content-center align-items-center">
+                    <tr class="d-flex justify-content-center">
+                        <th scope="col" class="col-3 d-flex justify-content-center">Categories</th>
+                        <th scope="col" class="col-3 d-flex justify-content-center">Profits</th>
+                        <th scope="col" class="col-3 d-flex justify-content-center">Assistance</th>
+                    </tr>
+                </thead>
+                <tbody id="table3">
+                </tbody>
+            </table>
+        </section>
+    </main>
+    <footer class="text-center">
+        <h3 class="m-5">Get in touch with me</h3>
+        <div class="mx-5">
+            <i class="fa-brands fa-github fa-2xl m-3"></i>
+            <i class="fa-brands fa-linkedin-in fa-2xl m-3"></i>
+        </div>
+    </footer>
+    <script src="./javascript/table.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/4a6cf95f22.js" crossorigin="anonymous"></script>
+</body>
+</html>
