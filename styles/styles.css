@@ -360,3 +360,23 @@ footer .fa-brands {
 .table-container {
     margin-top: 50px;
 }
+
+/* Contact form */
+
+.form-contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3rem;
+    margin-top: 3rem;
+
+}
+
+.form-contact .textarea {
+    height: 100px;
+    width: 100%;
+}
+
+.width-100 {
+    width: 100%;
+}
