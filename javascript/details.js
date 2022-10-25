@@ -6,7 +6,7 @@ async function detailsId(){
     let id = location.search.slice(4)
   
     try{
-      let response = await fetch(`https://mind-hub.up.railway.app/amazing`)
+      let response = await fetch(`https://mh-amazing.herokuapp.com/amazing`)
       let events = await response.json()
       var eventsData = await events.events
     
