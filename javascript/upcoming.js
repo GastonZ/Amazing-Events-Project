@@ -7,7 +7,7 @@ const searchId = document.getElementById('searchId')
 
 async function otherEvents(){
     try {
-        let response = await fetch('https://mind-hub.up.railway.app/amazing')
+        let response = await fetch('https://mh-amazing.herokuapp.com/amazing')
         let data = await response.json()
         let events = data.events
         let date = data.date

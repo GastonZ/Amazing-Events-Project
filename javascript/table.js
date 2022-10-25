@@ -1,7 +1,7 @@
 //Table 1
 
 async function getStats1(id) {
-    let response = await fetch("https://mind-hub.up.railway.app/amazing?time=past")
+    let response = await fetch("https://mh-amazing.herokuapp.com/amazing?time=past")
     let data = await response.json()
     let events = data.events
     events.map(x => {
@@ -40,7 +40,7 @@ getStats1('table1')
 //Table 2
 
 async function getStats2(id) {
-    let response = await fetch(`https://mind-hub.up.railway.app/amazing?time=upcoming`)
+    let response = await fetch(`https://mh-amazing.herokuapp.com/amazing?time=upcoming`)
     let data = await response.json()
     let events = data.events 
     events.map(x => {
@@ -99,7 +99,7 @@ getStats2("table2")
 //Table 3
 
 async function getStats3(id) {
-    let response = await fetch("https://mind-hub.up.railway.app/amazing?time=past")
+    let response = await fetch("https://mh-amazing.herokuapp.com/amazing?time=past")
     let data = await response.json()
     let events = data.events
     events.map(x => {

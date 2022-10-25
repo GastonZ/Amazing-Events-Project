@@ -9,7 +9,7 @@ const searchId = document.getElementById('searchId')
 async function getEvents(){
     try {
         
-        let response = await fetch('https://mind-hub.up.railway.app/amazing')
+        let response = await fetch('https://mh-amazing.herokuapp.com/amazing')
         let events = await response.json()
         var eventsData = await events.events
 
