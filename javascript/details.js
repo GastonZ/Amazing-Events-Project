@@ -30,8 +30,10 @@ async function detailsId(){
              <img class="detail-img" src="${e.image}" alt="${e.name}" height="400">
         </div>
         <div class="text-center">
-            <h2>${e.name}</h2>
+            <h2><strong>${e.name}</strong></h2>
+            <p>${e.place}</p>
             <p>${e.description}</p>
+            <strong>${e.date.slice(0,10)}</strong><br>
             <span>Price : $${e.price}</span>
         </div>
     `
